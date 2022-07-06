@@ -1,0 +1,5 @@
+package TypeClass
+
+class TypeClass {
+
+}

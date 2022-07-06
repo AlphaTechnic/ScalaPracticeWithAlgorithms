@@ -6,3 +6,6 @@ lazy val root = (project in file("."))
   .settings(
     name := "ScalaPracticeWithAlgorithms"
   )
+
+//scalacOptions += "-Ypartial-unification"
+libraryDependencies += "org.typelevel" %% "cats-core" % "2.7.0"
