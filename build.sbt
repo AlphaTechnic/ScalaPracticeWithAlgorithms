@@ -9,3 +9,4 @@ lazy val root = (project in file("."))
 
 //scalacOptions += "-Ypartial-unification"
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.7.0"
+scalacOptions += "-language:higherKinds"
