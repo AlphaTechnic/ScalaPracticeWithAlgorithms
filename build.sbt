@@ -10,3 +10,5 @@ lazy val root = (project in file("."))
 //scalacOptions += "-Ypartial-unification"
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.7.0"
 scalacOptions += "-language:higherKinds"
+libraryDependencies += "dev.zio" %% "zio" % "2.0.0-M4"
+libraryDependencies += "dev.zio" %% "zio-streams" % "2.0.0-M4"

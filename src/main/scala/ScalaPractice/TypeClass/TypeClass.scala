@@ -1,4 +1,4 @@
-package TypeClass
+package ScalaPractice.TypeClass
 
 object TypeClass {
   sealed trait Message

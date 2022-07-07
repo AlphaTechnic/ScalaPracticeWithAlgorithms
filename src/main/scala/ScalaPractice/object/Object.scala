@@ -1,4 +1,4 @@
-package Practice.`object`
+package ScalaPractice.`object`
 
 object Object {
   class Email(val username: String, val domainName: String)

@@ -1,4 +1,4 @@
-package Practice.traits
+package ScalaPractice.traits
 
 object traits {
   trait Iterator[A] {

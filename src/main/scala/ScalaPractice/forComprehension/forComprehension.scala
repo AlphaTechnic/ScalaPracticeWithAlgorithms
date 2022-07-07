@@ -1,4 +1,4 @@
-package Practice.forComprehension
+package ScalaPractice.forComprehension
 
 object forComprehension {
   def foo(n: Int, v: Int) =

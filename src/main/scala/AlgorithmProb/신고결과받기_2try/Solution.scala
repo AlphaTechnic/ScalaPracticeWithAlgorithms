@@ -1,4 +1,4 @@
-package 신고결과받기_2try
+package AlgorithmProb.신고결과받기_2try
 
 object Solution {
   def solution(id_list: Vector[String], report: Vector[String], k: Int): Vector[Int] = {

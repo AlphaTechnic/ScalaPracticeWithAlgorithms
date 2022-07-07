@@ -1,4 +1,4 @@
-package Practice.unapply
+package ScalaPractice.unapply
 
 import scala.util.Random
 

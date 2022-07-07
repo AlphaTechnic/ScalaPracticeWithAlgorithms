@@ -1,4 +1,4 @@
-package Practice.regex
+package ScalaPractice.regex
 
 import scala.util.matching.Regex
 
