@@ -24,7 +24,6 @@ object Main {
     for (_ <- 1 to b) {
       total = (total * a) % MOD
     }
-
     total match {
       case ans if ans != 0 => ans
       case _               => 10
