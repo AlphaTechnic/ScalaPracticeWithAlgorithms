@@ -20,9 +20,9 @@ object Main {
     val tuple2 = inputSideEffect()
 
     val answer = tuple2 match {
-      case (a, b) if (a > b)  => ">"
-      case (a, b) if (a == b) => "=="
-      case (a, b) if (a < b)  => "<"
+      case (a, b) if a > b  => ">"
+      case (a, b) if a == b => "=="
+      case (a, b) if a < b  => "<"
     }
 
     outputSideEffect(answer)
