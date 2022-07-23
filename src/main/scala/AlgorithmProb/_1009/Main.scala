@@ -10,7 +10,7 @@ object Main {
   def inputSideEffect(): List[(Int, Int)] = {
     val iter = sc.nextInt()
     var list: List[(Int, Int)] = List()
-    for (i <- 1 to iter) {
+    for (_ <- 1 to iter) {
       val tuple2 = inputTwoInt()
       list = list.appended(tuple2)
     }
@@ -34,13 +34,13 @@ object Main {
     val b = tuple2._2
 
     var total = 1
-    for (i <- 1 to b) {
+    for (_ <- 1 to b) {
       total = (total * a) % MOD
     }
 
     total match {
-      case ans if (ans != 0) => ans
-      case _                 => 10
+      case ans if ans != 0 => ans
+      case _               => 10
     }
   }
 
