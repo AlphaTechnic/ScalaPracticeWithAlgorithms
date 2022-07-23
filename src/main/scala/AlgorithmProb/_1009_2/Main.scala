@@ -26,8 +26,8 @@ object Main {
     }
 
     total match {
-      case ans if (ans != 0) => ans
-      case _                 => 10
+      case ans if ans != 0 => ans
+      case _               => 10
     }
   }
 
