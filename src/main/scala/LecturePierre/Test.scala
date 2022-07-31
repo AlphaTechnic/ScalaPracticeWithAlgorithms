@@ -22,13 +22,13 @@ object Test extends scala.App {
       }
   }
 
-  val layer: ZLayer[Has[Random], Nothing, Has[WeatherApi]] =
+  val layer: ZLayer[Random, Nothing, WeatherApi] =
     ZIO
       .service[Random]
       .map(random => WeatherApiImpl(random))
       .toLayer
 
-  val f: ZIO[Has[Clock] with Has[Console] with Has[WeatherApi], Nothing, Unit] =
+  val f: ZIO[Clock with Console with WeatherApi, Nothing, Unit] =
     for {
       weather <- ZIO.serviceWith[WeatherApi](_.getWeather).orDie
       _ <- Console.printLine(weather).delay(2 seconds).ignore
